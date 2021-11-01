@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CardMedia, Grid, MenuItem, Select, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { styles } from '../styleobjects/popup';
 import { makeStyles } from '@mui/styles';
 
@@ -7,26 +7,18 @@ const useStyle = makeStyles(styles)
 
 const Popup = () => {
     const classes = useStyle();
-    const [animal, setAnimal] = useState('Nothing');
-
-    const handleChange = (event) => {
-        setAnimal(event.target.value);
-    };
 
     return (
-        <Grid className={classes.pageContainer}>
-            <Grid className={classes.gridContainer}>
-                <Grid className={classes.userOptionsContainer}>
-                    <Typography>Select an Animal</Typography>
-                    <Select
-                        value={animal}
-                        onChange={handleChange}
-                        className={classes.selectContainer}
-                    >
-                        <MenuItem value='Gorilla'>Gorrila</MenuItem>
-                        <MenuItem value='Monkey'>Monkey</MenuItem>
-                    </Select>
-                </Grid>
+        <Grid direction='column'>
+            <Grid className={classes.pageContainerOne}>
+                <Typography className={classes.whiteText}>
+                    Hello!
+                </Typography>
+            </Grid>
+            <Grid className={classes.pageContainerTwo}>
+                <Typography className={classes.blackText}>
+                    Hello!
+                </Typography>
             </Grid>
         </Grid>
     )

@@ -1,22 +1,25 @@
 export const styles = {
-    pageContainer: {
+    pageContainerOne: {
+        height: '100vh',
         display: 'flex',
-        width: '100%',
-        minHeight: '100vh',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'black',
     },
-    gridContainer: {
+    whiteText: {
+        color: 'white',
+        fontSize: '5rem !important',
+    },
+    pageContainerTwo: {
+        height: '100vh',
         display: 'flex',
-        height: '25rem',
-        width: '45%',
-        margin: 'auto',
-        borderRadius: '1rem',
-        boxShadow: 'rgba(100, 100, 111, 0.2) 0rem 0.7rem 2.9rem 0rem',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'white',
     },
-    userOptionsContainer: {
-        display: 'flex',
-        flexDirection: 'column',
+    blackText: {
+        color: 'black',
+        fontSize: '5rem !important',
     },
-    selectContainer: {
-        width: '15rem',
-    }
+
 }
