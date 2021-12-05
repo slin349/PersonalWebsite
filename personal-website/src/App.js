@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import Popup from "./components/Popup";
+import LandingPage from "./components/LandingPage";
 
 const theme = createTheme({
   typography: {
@@ -10,7 +10,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Popup />
+      <LandingPage />
     </ThemeProvider>
   );
 }
