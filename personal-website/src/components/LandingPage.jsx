@@ -1,9 +1,10 @@
 import React from 'react'
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Divider, Grid, Typography } from '@mui/material';
 import { styles } from '../styleobjects/LandingPage';
 import { makeStyles } from '@mui/styles';
 import { data } from '../data/data';
 import memoji from '../images/memoji.png';
+import AboutMeCard from './AboutMeCard';
 
 const useStyle = makeStyles(styles)
 
@@ -19,19 +20,22 @@ const LandingPage = () => {
                     </Grid>
                     <Grid xs={6} container item direction='column'>
                         <Typography className={classes.nameText}>
-                            Hello, my name is Steven Lin
+                            Hello, my name is
+                            <span className={classes.myNameText}>
+                                &nbsp;Steven Lin
+                            </span>
                         </Typography>
                         <Typography className={classes.welcomeText}>
-                            Welcome to my website :)
+                            Welcome to my website!
                         </Typography>
                         <Grid className={classes.buttonContainer}>
-                            <Button>
+                            <Button variant='contained' className={classes.button}>
                                 About Me
                             </Button>
-                            <Button>
-                                Work Experience
+                            <Button variant='contained' className={classes.button}>
+                                Work
                             </Button>
-                            <Button>
+                            <Button variant='contained' className={classes.button}>
                                 Projects
                             </Button>
                         </Grid>
@@ -39,7 +43,17 @@ const LandingPage = () => {
                 </Grid>
             </Grid>
             <Grid className={classes.pageTwoContainer}>
-
+                <Grid className={classes.aboutMeTitleContainer}>
+                    <Typography className={classes.aboutMeTitle}>
+                        About Me
+                    </Typography>
+                    <Divider className={classes.divider} />
+                </Grid>
+                <Grid className={classes.aboutMeTextContainer}>
+                    {data.map((datainfo) => (
+                        <AboutMeCard datainfo={datainfo} />
+                    ))}
+                </Grid>
             </Grid>
         </>
     )
