@@ -1,6 +1,6 @@
 import memoji from '../images/memoji.png';
 
-export const data = [
+export const aboutMeData = [
     {
         img: memoji,
         title: 'Software Engineering',
@@ -14,11 +14,22 @@ export const data = [
     {
         img: memoji,
         title: 'Toronto',
-        description: 'All my 21 years of my life have been spent in Toronto! However, I also love travelling and love new experiences.',
+        description: 'All 21 years of my life have been spent in Toronto! However, I also love travelling and love new experiences.',
     },
     {
         img: memoji,
         title: 'Cooking',
         description: 'Cooking is one of my favourite hobby and I spend a lot of my time trying out different foods.',
     },
+];
+
+export const workData = [
+    {
+        img: memoji,
+        title: 'Geotab',
+        role: 'Web Developer Interm',
+        location: 'Oakville, Ontario',
+        date: 'May 2021 - Present',
+        description: 'asdasd'
+    }
 ];

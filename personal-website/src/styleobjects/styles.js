@@ -1,5 +1,5 @@
 export const styles = {
-    pageContainer: {
+    firstPageContainer: {
         height: '100vh',
         display: 'flex',
         backgroundColor: '#77C9D4',
@@ -74,17 +74,17 @@ export const styles = {
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
-        marginTop: '3rem',
+        marginTop: '10rem',
     },
     aboutMeCard: {
         display: 'flex',
         flexDirection: 'column',
         borderRadius: '0.5rem',
-        height: '25rem',
+        maxHeight: '25rem',
         width: '20rem',
         margin: '2rem',
         backgroundColor: 'white',
-        justifyContent: 'center',
+        textAlign: 'center',
         alignItems: 'center',
     },
     aboutMeImage: {
@@ -93,12 +93,61 @@ export const styles = {
     },
     aboutMeTitleText: {
         fontSize: '1.5rem',
+        width: '100%',
         fontWeight: '600',
-        height: '4rem',
+        marginBottom: '2.5rem',
     },
     aboutMeDescription: {
-        fontSize: '1.2rem',
-        width: '80%',
+        fontSize: '1rem',
+        height: '12rem',
+        margin: '0rem 3rem',
+    },
+    pageThreeContainer: {
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: '#77C9D4',
+    },
+    workCardsContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    workCard: {
+        display: 'flex',
+        width: '50rem',
+        height: '25rem',
+        border: '0.1rem solid black',
+        borderRadius: '0.5rem',
+        margin: '3rem 0rem',
+    },
+    workCardImageContainer: {
+        width: '50%',
+        margin: 'auto',
         textAlign: 'center',
+    },
+    workCardImage: {
+        width: '15rem',
+        height: '15rem',
+    },
+    workCardContent: {
+        width: '50%',
+    },
+    workCardTitle: {
+        fontSize: '1.6rem',
+    },
+    workCardRole: {
+        fontSize: '1.4rem',
+    },
+    workCardLocation: {
+        fontSize: '1.2rem',
+    },
+    workCardDate: {
+        fontSize: '1.2rem',
+    },
+    workCardDescription: {
+        fontSize: '1.2rem',
     }
 }
