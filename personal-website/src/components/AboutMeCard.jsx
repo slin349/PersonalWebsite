@@ -10,7 +10,7 @@ const AboutMeCard = ({ datainfo }) => {
 
     return (
         <Grid className={classes.aboutMeCard}>
-            <img src={datainfo.img} alt='tiny-img' className={classes.aboutMeImage} />
+            <Typography className={classes.aboutMeIcon}>{datainfo.img}</Typography>
             <Typography className={classes.aboutMeTitleText}>{datainfo.title}</Typography>
             <Typography className={classes.aboutMeDescription}>{datainfo.description}</Typography>
         </Grid>

@@ -2,22 +2,22 @@ import memoji from '../images/memoji.png';
 
 export const aboutMeData = [
     {
-        img: memoji,
+        img: '✏️',
         title: 'Software Engineering',
         description: 'I am currently a 3rd year Software Engineering student at Western Univeristy.',
     },
     {
-        img: memoji,
+        img: '💻',
         title: 'Web Developer',
         description: 'I enjoy building applications through web-based mediums and I have a background in full stack development ',
     },
     {
-        img: memoji,
+        img: '🏠',
         title: 'Toronto',
         description: 'All 21 years of my life have been spent in Toronto! However, I also love travelling and love new experiences.',
     },
     {
-        img: memoji,
+        img: '🍳',
         title: 'Cooking',
         description: 'Cooking is one of my favourite hobby and I spend a lot of my time trying out different foods.',
     },
@@ -27,9 +27,9 @@ export const workData = [
     {
         img: memoji,
         title: 'Geotab',
-        role: 'Web Developer Interm',
+        role: 'Web Developer Intern',
         location: 'Oakville, Ontario',
         date: 'May 2021 - Present',
-        description: 'asdasd'
+        description: 'Worked as a Web Developer on the Marketplace team using React, JavaScript, ASP.NET, and PostgreSQL. Developed front-end components and features for Geotab solutions.'
     }
 ];

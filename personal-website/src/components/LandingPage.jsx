@@ -6,6 +6,7 @@ import { aboutMeData, workData } from '../data/data';
 import memoji from '../images/memoji.png';
 import AboutMeCard from './AboutMeCard';
 import WorkCard from './WorkCard';
+import ProjectCard from './ProjectCard';
 
 const useStyle = makeStyles(styles)
 
@@ -44,28 +45,41 @@ const LandingPage = () => {
                 </Grid>
             </Grid>
             <Grid className={classes.pageTwoContainer}>
-                <Grid className={classes.aboutMeTitleContainer}>
-                    <Typography className={classes.aboutMeTitle}>
+                <Grid className={classes.titleContainer}>
+                    <Typography className={classes.title}>
                         About Me
                     </Typography>
                     <Divider className={classes.divider} />
                 </Grid>
-                <Grid className={classes.aboutMeTextContainer}>
+                <Grid className={classes.contentContainer}>
                     {aboutMeData.map((datainfo, index) => (
                         <AboutMeCard key={index} datainfo={datainfo} />
                     ))}
                 </Grid>
             </Grid>
             <Grid className={classes.pageThreeContainer}>
-                <Grid className={classes.aboutMeTitleContainer}>
-                    <Typography className={classes.aboutMeTitle}>
+                <Grid className={classes.titleContainer}>
+                    <Typography className={classes.title}>
                         Work Experience
                     </Typography>
                     <Divider className={classes.divider} />
                 </Grid>
-                <Grid className={classes.workCardsContainer}>
+                <Grid className={classes.contentContainer}>
                     {workData.map((workdata, index) => (
                         <WorkCard key={index} workData={workdata} />
+                    ))}
+                </Grid>
+            </Grid>
+            <Grid className={classes.pageFourContainer}>
+                <Grid className={classes.titleContainer}>
+                    <Typography className={classes.title}>
+                        Projects
+                    </Typography>
+                    <Divider className={classes.divider} />
+                </Grid>
+                <Grid container className={classes.contentContainer}>
+                    {aboutMeData.map(() => (
+                        <ProjectCard />
                     ))}
                 </Grid>
             </Grid>

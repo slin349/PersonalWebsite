@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Divider, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react'
 import { styles } from '../styleobjects/styles';
@@ -13,6 +13,7 @@ const WorkCard = ({ workData }) => {
             <Grid className={classes.workCardImageContainer}>
                 <img src={workData.img} className={classes.workCardImage} alt='workImage' />
             </Grid>
+            <Divider orientation='vertical' className={classes.dividerStyle} />
             <Grid className={classes.workCardContent}>
                 <Typography className={classes.workCardTitle}>
                     {workData.title}

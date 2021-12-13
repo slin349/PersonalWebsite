@@ -42,25 +42,22 @@ export const styles = {
         margin: '1rem',
         borderRadius: '10rem',
         alignSelf: 'center',
-        '&:hover': {
-            backgroundColor: '#ED9121',
-        },
     },
     pageTwoContainer: {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#57BC90',
+        backgroundColor: 'white',
     },
-    aboutMeTitleContainer: {
+    titleContainer: {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
         alignContent: 'center',
     },
-    aboutMeTitle: {
+    title: {
         margin: '2rem auto 1rem auto',
-        color: 'white',
+        color: '#015249',
         fontWeight: '600',
         fontSize: '4rem',
     },
@@ -68,13 +65,14 @@ export const styles = {
         color: 'black',
         margin: '0 auto',
         width: '10rem',
-        borderBottomWidth: '0.2rem'
+        borderBottomWidth: '0.2rem',
+        backgroundColor: 'rgba(28, 162, 178, 0.3)',
     },
-    aboutMeTextContainer: {
-        width: '100%',
+    contentContainer: {
+        width: '100rem',
         display: 'flex',
         justifyContent: 'center',
-        marginTop: '10rem',
+        margin: '6rem auto',
     },
     aboutMeCard: {
         display: 'flex',
@@ -83,43 +81,39 @@ export const styles = {
         maxHeight: '25rem',
         width: '20rem',
         margin: '2rem',
-        backgroundColor: 'white',
         textAlign: 'center',
         alignItems: 'center',
+        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
     },
-    aboutMeImage: {
-        height: '8rem',
-        width: '8rem',
+    aboutMeIcon: {
+        height: '3.5rem',
+        fontSize: '2.5rem',
+        margin: '1rem 0rem',
     },
     aboutMeTitleText: {
         fontSize: '1.5rem',
         width: '100%',
         fontWeight: '600',
         marginBottom: '2.5rem',
+        color: '#1CA2B2',
     },
     aboutMeDescription: {
         fontSize: '1rem',
         height: '12rem',
         margin: '0rem 3rem',
+        color: '#323333',
     },
     pageThreeContainer: {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#77C9D4',
-    },
-    workCardsContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: 'white',
     },
     workCard: {
         display: 'flex',
         width: '50rem',
         height: '25rem',
-        border: '0.1rem solid black',
+        backgroundColor: 'rgba(1, 82, 73, 0.25)',
         borderRadius: '0.5rem',
         margin: '3rem 0rem',
     },
@@ -134,20 +128,63 @@ export const styles = {
     },
     workCardContent: {
         width: '50%',
+        padding: '1rem',
+    },
+    dividerStyle: {
+        height: '20rem',
+        marginTop: '2rem',
+        borderRightWidth: '0.15rem',
+        backgroundColor: 'white',
     },
     workCardTitle: {
-        fontSize: '1.6rem',
+        fontSize: '1.4rem',
+        fontWeight: '600',
+        marginTop: '2rem',
+        color: '#323333',
+        textShadow: '1px 1px 0px white',
     },
     workCardRole: {
-        fontSize: '1.4rem',
+        fontSize: '1.2rem',
+        fontWeight: '500',
+        color: '#1CA2B2',
+        margin: '0.2rem 0rem',
     },
     workCardLocation: {
-        fontSize: '1.2rem',
+        fontSize: '1rem',
+        color: '#F6F6F6',
     },
     workCardDate: {
-        fontSize: '1.2rem',
+        fontSize: '1rem',
+        color: '#F6F6F6',
+        marginBottom: '1rem',
     },
     workCardDescription: {
         fontSize: '1.2rem',
-    }
+        color: '#1B1B1B',
+    },
+    pageFourContainer: {
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: 'white',
+    },
+    projectCardContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '1rem',
+    },
+    projectCard: {
+        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+        width: '20rem',
+        height: '20rem',
+        marginBottom: '2rem',
+    },
+    projectCardImage: {
+        width: '100%',
+        opacity: '90%',
+        '&:hover': {
+            opacity: '100%',
+        },
+    },
 }
