@@ -30,6 +30,29 @@ export const workData = [
         role: 'Web Developer Intern',
         location: 'Oakville, Ontario',
         date: 'May 2021 - Present',
-        description: 'Worked as a Web Developer on the Marketplace team using React, JavaScript, ASP.NET, and PostgreSQL. Developed front-end components and features for Geotab solutions.'
+        description: 'Working as a Web Developer on the Marketplace team using React, JavaScript, ASP.NET, and PostgreSQL. Developing front-end components and features for Geotab solutions.'
     }
 ];
+
+export const projectData = [
+    {
+        name: 'This Website!',
+        img: memoji,
+    },
+    {
+        name: 'This Website!',
+        img: memoji,
+    },
+    {
+        name: 'This Website!',
+        img: memoji,
+    },
+    {
+        name: 'This Website!',
+        img: memoji,
+    },
+    {
+        name: 'This Website!',
+        img: memoji,
+    },
+]

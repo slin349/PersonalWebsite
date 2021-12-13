@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Divider, Grid, Typography } from '@mui/material';
 import { styles } from '../styleobjects/styles';
 import { makeStyles } from '@mui/styles';
-import { aboutMeData, workData } from '../data/data';
+import { aboutMeData, workData, projectData } from '../data/data';
 import memoji from '../images/memoji.png';
 import AboutMeCard from './AboutMeCard';
 import WorkCard from './WorkCard';
@@ -77,9 +77,9 @@ const LandingPage = () => {
                     </Typography>
                     <Divider className={classes.divider} />
                 </Grid>
-                <Grid container className={classes.contentContainer}>
-                    {aboutMeData.map(() => (
-                        <ProjectCard />
+                <Grid container className={classes.projectContentContainer}>
+                    {projectData.map((projectData) => (
+                        <ProjectCard projectData={projectData} />
                     ))}
                 </Grid>
             </Grid>

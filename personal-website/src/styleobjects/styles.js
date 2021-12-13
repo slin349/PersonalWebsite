@@ -42,6 +42,9 @@ export const styles = {
         margin: '1rem',
         borderRadius: '10rem',
         alignSelf: 'center',
+        '&:hover': {
+            backgroundColor: '#ED9121',
+        },
     },
     pageTwoContainer: {
         height: '100vh',
@@ -69,7 +72,9 @@ export const styles = {
         backgroundColor: 'rgba(28, 162, 178, 0.3)',
     },
     contentContainer: {
-        width: '100rem',
+        maxWidth: '90rem',
+        minHeight: '35rem',
+        alignItems: 'center',
         display: 'flex',
         justifyContent: 'center',
         margin: '6rem auto',
@@ -118,7 +123,7 @@ export const styles = {
         margin: '3rem 0rem',
     },
     workCardImageContainer: {
-        width: '50%',
+        width: '40%',
         margin: 'auto',
         textAlign: 'center',
     },
@@ -127,12 +132,13 @@ export const styles = {
         height: '15rem',
     },
     workCardContent: {
-        width: '50%',
-        padding: '1rem',
+        width: '60%',
+        padding: '1rem 2.5rem',
+        marginLeft: '1rem'
     },
     dividerStyle: {
         height: '20rem',
-        marginTop: '2rem',
+        margin: '2.5rem 0rem',
         borderRightWidth: '0.15rem',
         backgroundColor: 'white',
     },
@@ -141,7 +147,7 @@ export const styles = {
         fontWeight: '600',
         marginTop: '2rem',
         color: '#323333',
-        textShadow: '1px 1px 0px white',
+        textShadow: '0.1rem 0.1rem 0rem white',
     },
     workCardRole: {
         fontSize: '1.2rem',
@@ -168,6 +174,14 @@ export const styles = {
         flexDirection: 'column',
         backgroundColor: 'white',
     },
+    projectContentContainer: {
+        maxWidth: '90rem',
+        minHeight: '35rem',
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '3rem auto',
+    },
     projectCardContainer: {
         display: 'flex',
         flexDirection: 'column',
@@ -179,12 +193,24 @@ export const styles = {
         width: '20rem',
         height: '20rem',
         marginBottom: '2rem',
+        position: 'relative',
+        opacity: '70%',
+        '&:hover': {
+            opacity: '100%',
+            '& p': {
+                display: 'block',
+            },
+        },
+    },
+    projectName: {
+        position: 'absolute',
+        top: '37%',
+        width: '100%',
+        textAlign: 'center',
+        display: 'none',
+        fontSize: '3rem',
     },
     projectCardImage: {
         width: '100%',
-        opacity: '90%',
-        '&:hover': {
-            opacity: '100%',
-        },
     },
 }
