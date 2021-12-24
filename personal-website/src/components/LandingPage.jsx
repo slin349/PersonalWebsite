@@ -7,6 +7,8 @@ import memoji from '../images/memoji.png';
 import AboutMeCard from './AboutMeCard';
 import WorkCard from './WorkCard';
 import ProjectCard from './ProjectCard';
+import { Link } from 'react-scroll/modules';
+import Footer from './Footer';
 
 const useStyle = makeStyles(styles)
 
@@ -31,20 +33,26 @@ const LandingPage = () => {
                             Welcome to my website!
                         </Typography>
                         <Grid className={classes.buttonContainer}>
-                            <Button variant='contained' className={classes.button}>
-                                About Me
-                            </Button>
-                            <Button variant='contained' className={classes.button}>
-                                Work
-                            </Button>
-                            <Button variant='contained' className={classes.button}>
-                                Projects
-                            </Button>
+                            <Link to='aboutMe' smooth={true}>
+                                <Button variant='contained' className={classes.button}>
+                                    About Me
+                                </Button>
+                            </Link>
+                            <Link to='work' smooth={true}>
+                                <Button variant='contained' className={classes.button}>
+                                    Work
+                                </Button>
+                            </Link>
+                            <Link to='projects' smooth={true}>
+                                <Button variant='contained' className={classes.button}>
+                                    Projects
+                                </Button>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid className={classes.pageTwoContainer}>
+            <Grid className={classes.pageTwoContainer} id='aboutMe'>
                 <Grid className={classes.titleContainer}>
                     <Typography className={classes.title}>
                         About Me
@@ -57,7 +65,7 @@ const LandingPage = () => {
                     ))}
                 </Grid>
             </Grid>
-            <Grid className={classes.pageThreeContainer}>
+            <Grid className={classes.pageThreeContainer} id='work'>
                 <Grid className={classes.titleContainer}>
                     <Typography className={classes.title}>
                         Work Experience
@@ -70,7 +78,7 @@ const LandingPage = () => {
                     ))}
                 </Grid>
             </Grid>
-            <Grid className={classes.pageFourContainer}>
+            <Grid className={classes.pageFourContainer} id='projects'>
                 <Grid className={classes.titleContainer}>
                     <Typography className={classes.title}>
                         Projects
@@ -82,6 +90,9 @@ const LandingPage = () => {
                         <ProjectCard projectData={projectData} />
                     ))}
                 </Grid>
+            </Grid>
+            <Grid className={classes.footer}>
+                <Footer />
             </Grid>
         </Grid>
     )

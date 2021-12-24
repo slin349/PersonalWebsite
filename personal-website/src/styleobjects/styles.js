@@ -204,13 +204,31 @@ export const styles = {
     },
     projectName: {
         position: 'absolute',
-        top: '37%',
+        top: '30%',
         width: '100%',
         textAlign: 'center',
         display: 'none',
         fontSize: '3rem',
+        color: 'black',
     },
     projectCardImage: {
         width: '100%',
+        height: '100%',
     },
+    footer: {
+        width: '100%',
+        backgroundColor: 'grey',
+    },
+    footerContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        height: '5rem',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    footerText: {
+        fontSize: '0.8rem',
+        color: 'white',
+        marginTop: '0.5rem',
+    }
 }
