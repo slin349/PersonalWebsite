@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Divider, Grid, Typography } from '@mui/material';
+import { Link as MaterialLink } from '@mui/material';
 import { styles } from '../styleobjects/styles';
 import { makeStyles } from '@mui/styles';
 import { aboutMeData, workData, projectData } from '../data/data';
@@ -9,6 +10,10 @@ import WorkCard from './WorkCard';
 import ProjectCard from './ProjectCard';
 import { Link } from 'react-scroll/modules';
 import Footer from './Footer';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import FeedIcon from '@mui/icons-material/Feed';
 
 const useStyle = makeStyles(styles)
 
@@ -32,6 +37,20 @@ const LandingPage = () => {
                         <Typography className={classes.welcomeText}>
                             Welcome to my website!
                         </Typography>
+                        <Grid className={classes.iconContainer}>
+                            <MaterialLink href='https://github.com/slin349?tab=repositories' target='_blank' rel='noopener'>
+                                <GitHubIcon className={classes.icons} />
+                            </MaterialLink>
+                            <MaterialLink href='https://www.linkedin.com/in/slin349/' target='_blank' rel='noopener'>
+                                <LinkedInIcon className={classes.icons} />
+                            </MaterialLink>
+                            <MaterialLink href='mailto:stevenlin159@gmail.com'>
+                                <EmailIcon className={classes.icons} />
+                            </MaterialLink>
+                            <MaterialLink href='https://github.com/slin349?tab=repositories' target='_blank' rel='noopener'>
+                                <FeedIcon className={classes.icons} />
+                            </MaterialLink>
+                        </Grid>
                         <Grid className={classes.buttonContainer}>
                             <Link to='aboutMe' smooth={true}>
                                 <Button variant='contained' className={classes.button}>

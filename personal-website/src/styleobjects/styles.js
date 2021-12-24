@@ -31,10 +31,20 @@ export const styles = {
         color: '#015249',
         textAlign: 'center',
     },
+    iconContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '1rem',
+    },
+    icons: {
+        fontSize: '2rem',
+        margin: '0rem 0.3rem',
+        color: '#015249',
+    },
     buttonContainer: {
         display: 'flex',
         justifyContent: 'center',
-        marginTop: '2rem',
+        marginTop: '0.5rem',
     },
     button: {
         display: 'flex',
