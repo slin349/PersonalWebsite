@@ -16,6 +16,7 @@ const Footer = () => {
             <Typography className={classes.footerText}>
                 ©️ Steven Lin
             </Typography>
+
         </Grid>
     )
 }

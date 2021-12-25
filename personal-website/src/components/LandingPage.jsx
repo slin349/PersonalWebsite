@@ -14,6 +14,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FeedIcon from '@mui/icons-material/Feed';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 const useStyle = makeStyles(styles)
 
@@ -130,9 +131,7 @@ const LandingPage = () => {
                 </Grid>
             </Grid>
             <Link to='firstPage' smooth={true}>
-                <Button style={{ display: visible ? 'inline' : 'none' }} className={classes.scrollButton}>
-                    ^
-                </Button>
+                <ArrowDropUpIcon style={{ display: visible ? 'inline' : 'none' }} className={classes.scrollButton} />
             </Link>
             <Grid className={classes.footer}>
                 <Footer />

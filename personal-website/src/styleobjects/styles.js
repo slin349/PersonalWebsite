@@ -84,7 +84,7 @@ export const styles = {
         backgroundColor: 'rgba(28, 162, 178, 0.3)',
     },
     contentContainer: {
-        maxWidth: '90rem',
+        width: '100%',
         minHeight: '35rem',
         alignItems: 'center',
         display: 'flex',
@@ -185,14 +185,16 @@ export const styles = {
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: 'white',
+        marginBottom: '5rem',
     },
     projectContentContainer: {
-        maxWidth: '90rem',
+        width: '100%',
+        padding: '0rem 10rem',
         minHeight: '35rem',
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'center',
-        margin: '3rem auto',
+        margin: '3rem 0rem',
     },
     projectCardContainer: {
         display: 'flex',
@@ -202,8 +204,8 @@ export const styles = {
     },
     projectCard: {
         boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-        width: '20rem',
-        height: '20rem',
+        width: '18rem',
+        height: '18rem',
         position: 'relative',
         opacity: '70%',
         '&:hover': {
@@ -228,13 +230,19 @@ export const styles = {
     },
     scrollButton: {
         position: 'fixed',
-        width: '1rem',
-        height: '1rem',
+        width: '3rem',
+        height: '3rem',
         zIndex: '1',
         bottom: '6rem',
         right: '3rem',
-        borderRadius: '0.5rem',
-        backgroundColor: 'green',
+        borderRadius: '8rem',
+        color: 'white',
+        backgroundColor: '#015249',
+        cursor: 'pointer',
+        transition: 'background-color 0.25s ease',
+        '&:hover': {
+            backgroundColor: '#ED9121',
+        },
     },
     footer: {
         width: '100%',

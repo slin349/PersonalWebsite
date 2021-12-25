@@ -47,7 +47,7 @@ export const projectData = [
     {
         name: 'Recipe Finder',
         img: recipeFinder,
-        link: 'https://github.com/slin349/PersonalWebsite',
+        link: '',
     },
     {
         name: 'Western Timetable',
@@ -57,7 +57,7 @@ export const projectData = [
     {
         name: 'Hansel and Gretel RPG',
         img: hansel,
-        link: 'https://github.com/slin349/PersonalWebsite',
+        link: 'https://github.com/slin349/HanselAndGretelRPG/tree/master',
     },
     {
         name: 'V1Chat',
