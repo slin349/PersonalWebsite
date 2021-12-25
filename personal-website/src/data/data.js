@@ -1,4 +1,5 @@
 import memoji from '../images/memoji.png';
+import geotab from '../images/geotabLogo.png';
 import hansel from '../images/hanselAndGretel.png';
 import recipeFinder from '../images/recipeFinder.png';
 import chat from '../images/v1chat.png';
@@ -29,7 +30,7 @@ export const aboutMeData = [
 
 export const workData = [
     {
-        img: memoji,
+        img: geotab,
         title: 'Geotab',
         role: 'Web Developer Intern',
         location: 'Oakville, Ontario',
