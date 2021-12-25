@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Divider, Grid, Typography } from '@mui/material';
 import { Link as MaterialLink } from '@mui/material';
 import { styles } from '../styleobjects/styles';
@@ -19,10 +19,29 @@ const useStyle = makeStyles(styles)
 
 const LandingPage = () => {
     const classes = useStyle();
+    const [visible, setVisible] = useState(false);
+
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 800) {
+            setVisible(true)
+        } else {
+            setVisible(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisible);
+
+        return () => {
+            window.removeEventListener('scroll', toggleVisible)
+        }
+
+    }, []);
 
     return (
         <Grid>
-            <Grid className={classes.firstPageContainer}>
+            <Grid className={classes.firstPageContainer} id='firstPage'>
                 <Grid container direction='row' className={classes.firstPageContentContainer}>
                     <Grid xs={3} item className={classes.image}>
                         <img src={memoji} alt='self-portrait' />
@@ -52,17 +71,17 @@ const LandingPage = () => {
                             </MaterialLink>
                         </Grid>
                         <Grid className={classes.buttonContainer}>
-                            <Link to='aboutMe' smooth={true}>
+                            <Link to='aboutMe' smooth={true} className={classes.buttonLink}>
                                 <Button variant='contained' className={classes.button}>
                                     About Me
                                 </Button>
                             </Link>
-                            <Link to='work' smooth={true}>
+                            <Link to='work' smooth={true} className={classes.buttonLink}>
                                 <Button variant='contained' className={classes.button}>
                                     Work
                                 </Button>
                             </Link>
-                            <Link to='projects' smooth={true}>
+                            <Link to='projects' smooth={true} className={classes.buttonLink}>
                                 <Button variant='contained' className={classes.button}>
                                     Projects
                                 </Button>
@@ -110,6 +129,11 @@ const LandingPage = () => {
                     ))}
                 </Grid>
             </Grid>
+            <Link to='firstPage' smooth={true}>
+                <Button style={{ display: visible ? 'inline' : 'none' }} className={classes.scrollButton}>
+                    ^
+                </Button>
+            </Link>
             <Grid className={classes.footer}>
                 <Footer />
             </Grid>

@@ -46,10 +46,12 @@ export const styles = {
         justifyContent: 'center',
         marginTop: '0.5rem',
     },
+    buttonLink: {
+        margin: '0.5rem',
+    },
     button: {
         display: 'flex',
         backgroundColor: '#015249',
-        margin: '1rem',
         borderRadius: '10rem',
         alignSelf: 'center',
         '&:hover': {
@@ -202,7 +204,6 @@ export const styles = {
         boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
         width: '20rem',
         height: '20rem',
-        marginBottom: '2rem',
         position: 'relative',
         opacity: '70%',
         '&:hover': {
@@ -225,6 +226,16 @@ export const styles = {
         width: '100%',
         height: '100%',
     },
+    scrollButton: {
+        position: 'fixed',
+        width: '1rem',
+        height: '1rem',
+        zIndex: '1',
+        bottom: '6rem',
+        right: '3rem',
+        borderRadius: '0.5rem',
+        backgroundColor: 'green',
+    },
     footer: {
         width: '100%',
         backgroundColor: 'grey',
@@ -240,5 +251,5 @@ export const styles = {
         fontSize: '0.8rem',
         color: 'white',
         marginTop: '0.5rem',
-    }
+    },
 }
