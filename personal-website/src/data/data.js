@@ -1,4 +1,5 @@
 import memoji from '../images/memoji.png';
+import webpage from '../images/webpage.jpg';
 import geotab from '../images/geotabLogo.png';
 import hansel from '../images/hanselAndGretel.png';
 import recipeFinder from '../images/recipeFinder.png';
@@ -41,8 +42,8 @@ export const workData = [
 
 export const projectData = [
     {
-        name: 'This Website!',
-        img: memoji,
+        name: 'Personal Website',
+        img: webpage,
         link: 'https://github.com/slin349/PersonalWebsite',
     },
     {

@@ -5,6 +5,11 @@ export const styles = {
         backgroundColor: '#77C9D4',
         backgroundImage: 'linear-gradient(to right, #77C9D4, #57BC90)',
     },
+    '@media (min-width: 1000px)': {
+        firstPageContainer: {
+            backgroundColor: 'white',
+        },
+    },
     firstPageContentContainer: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -211,18 +216,22 @@ export const styles = {
         '&:hover': {
             opacity: '100%',
             '& p': {
-                display: 'block',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
             },
         },
     },
     projectName: {
         position: 'absolute',
-        top: '30%',
+        top: '35%',
         width: '100%',
         textAlign: 'center',
         display: 'none',
-        fontSize: '3rem',
-        color: 'black',
+        fontSize: '2rem',
+        color: 'white',
+        backgroundColor: '#499189',
+        height: '5rem',
     },
     projectCardImage: {
         width: '100%',
@@ -246,7 +255,7 @@ export const styles = {
     },
     footer: {
         width: '100%',
-        backgroundColor: 'grey',
+        backgroundColor: '#68C3B3',
     },
     footerContainer: {
         display: 'flex',
