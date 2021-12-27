@@ -3,7 +3,7 @@ export const styles = {
         display: 'flex',
         flexDirection: 'column',
         borderRadius: '0.5rem',
-        maxHeight: '25rem',
+        height: '25rem',
         width: '20rem',
         margin: '2rem',
         textAlign: 'center',
@@ -18,6 +18,7 @@ export const styles = {
     aboutMeTitleText: {
         fontSize: '1.5rem',
         width: '100%',
+        height: '5rem',
         fontWeight: '600',
         marginBottom: '2.5rem',
         color: '#1CA2B2',
@@ -27,5 +28,31 @@ export const styles = {
         height: '12rem',
         margin: '0rem 3rem',
         color: '#323333',
+    },
+    '@media (max-width: 1200px)': {
+        aboutMeCard: {
+            height: '18rem',
+        },
+        aboutMeIcon: {
+            fontSize: '2rem',
+        },
+        aboutMeTitleText: {
+            fontSize: '1rem',
+            height: '2rem',
+        },
+        aboutMeDescription: {
+            fontSize: '0.8rem',
+            margin: '0rem 1rem',
+        },
+    },
+    '@media (max-width: 838px)': {
+        aboutMeCard: {
+            flexDirection: 'column',
+        },
+    },
+    '@media (max-width: 330px)': {
+        aboutMeCard: {
+            width: '16rem',
+        },
     },
 };

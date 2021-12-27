@@ -53,4 +53,103 @@ export const styles = {
         fontSize: '1.2rem',
         color: '#1B1B1B',
     },
+    '@media (max-width: 838px)': {
+        workCardImage: {
+            width: '12rem',
+            height: '12rem',
+        },
+        workCardDescription: {
+            fontSize: '1rem',
+        },
+    },
+    '@media (max-width: 500px)': {
+        workCard: {
+            height: '20rem',
+        },
+        workCardImage: {
+            width: '8rem',
+            height: '8rem',
+        },
+        workCardContent: {
+            padding: '1rem 1.5rem',
+        },
+        workCardTitle: {
+            fontSize: '1.1rem',
+        },
+        workCardRole: {
+            fontSize: '0.9rem',
+        },
+        workCardLocation: {
+            fontSize: '0.7rem',
+        },
+        workCardDate: {
+            fontSize: '0.7rem',
+        },
+        workCardDescription: {
+            fontSize: '0.7rem',
+        },
+        dividerStyle: {
+            height: '15rem',
+        }
+    },
+    '@media (max-width: 400px)': {
+        workCard: {
+            height: '28rem',
+        },
+        workCardImage: {
+            width: '8rem',
+            height: '8rem',
+        },
+        workCardContent: {
+            padding: '1rem 1.25rem',
+        },
+        workCardTitle: {
+            fontSize: '1.1rem',
+        },
+        workCardRole: {
+            fontSize: '0.9rem',
+        },
+        workCardLocation: {
+            fontSize: '0.8rem',
+        },
+        workCardDate: {
+            fontSize: '0.8rem',
+        },
+        workCardDescription: {
+            fontSize: '0.8rem',
+        },
+        dividerStyle: {
+            height: '21rem',
+        }
+    },
+    '@media (max-width: 330px)': {
+        workCard: {
+            height: '30rem',
+        },
+        workCardImage: {
+            width: '6rem',
+            height: '6rem',
+        },
+        workCardContent: {
+            padding: '1rem 1.25rem',
+        },
+        workCardTitle: {
+            fontSize: '1.1rem',
+        },
+        workCardRole: {
+            fontSize: '0.9rem',
+        },
+        workCardLocation: {
+            fontSize: '0.8rem',
+        },
+        workCardDate: {
+            fontSize: '0.8rem',
+        },
+        workCardDescription: {
+            fontSize: '0.8rem',
+        },
+        dividerStyle: {
+            height: '25rem',
+        }
+    },
 };

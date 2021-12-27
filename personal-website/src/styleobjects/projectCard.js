@@ -35,4 +35,14 @@ export const styles = {
         width: '100%',
         height: '100%',
     },
+    '@media (max-width: 1200px)': {
+        projectCardContainer: {
+            width: '100%',
+        },
+    },
+    '@media (max-width: 330px)': {
+        projectCardContainer: {
+            padding: '0rem',
+        },
+    },
 };

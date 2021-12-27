@@ -43,7 +43,7 @@ const LandingPage = () => {
 
     return (
         <Grid>
-            <Grid className={classes.firstPageContainer} id='firstPage'>
+            <Grid className={classes.pageOneContainer} id='firstPage'>
                 <Grid container direction='row' className={classes.firstPageContentContainer}>
                     <Grid className={classes.image}>
                         <img src={memoji} alt='self-portrait' />
@@ -99,7 +99,7 @@ const LandingPage = () => {
                     </Typography>
                     <Divider className={classes.divider} />
                 </Grid>
-                <Grid className={classes.contentContainer}>
+                <Grid className={classes.aboutMeContentContainer}>
                     {aboutMeData.map((datainfo, index) => (
                         <AboutMeCard key={index} datainfo={datainfo} />
                     ))}
@@ -112,7 +112,7 @@ const LandingPage = () => {
                     </Typography>
                     <Divider className={classes.divider} />
                 </Grid>
-                <Grid className={classes.contentContainer}>
+                <Grid className={classes.workCardContentContainer}>
                     {workData.map((workdata, index) => (
                         <WorkCard key={index} workData={workdata} />
                     ))}

@@ -1,12 +1,12 @@
 export const styles = {
-    firstPageContainer: {
+    pageOneContainer: {
         height: '100vh',
         backgroundColor: '#77C9D4',
         backgroundImage: 'linear-gradient(to right, #77C9D4, #57BC90)',
     },
     firstPageContentContainer: {
-        height: '100vh',
         display: 'flex',
+        height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -14,39 +14,13 @@ export const styles = {
         width: '50%',
         display: 'flex',
         justifyContent: 'center',
+        '& img': {
+            width: '50%'
+        },
     },
     rightSideContentContainer: {
         width: '50%',
         paddingRight: '20rem',
-    },
-    //max-width is everything below
-    //min-width is everything above
-    '@media (max-width: 900px)': {
-        firstPageContentContainer: {
-            flexDirection: 'column',
-        },
-        image: {
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-        },
-        rightSideContentContainer: {
-            width: '100%',
-            paddingRight: '0',
-        },
-        pageTwoContainer: {
-            height: '100% !important',
-        },
-    },
-    '@media (max-width: 1600px) and  (min-width: 900px)': {
-        rightSideContentContainer: {
-            paddingRight: '0',
-        },
-    },
-    '@media (max-width: 400px)': {
-        button: {
-            fontSize: '0.8rem',
-        },
     },
     nameText: {
         fontSize: '2.5rem',
@@ -101,10 +75,10 @@ export const styles = {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        alignContent: 'center',
+        textAlign: 'center',
     },
     title: {
-        margin: '2rem auto 1rem auto',
+        margin: '2rem 0rem 1rem 0rem',
         color: '#015249',
         fontWeight: '600',
         fontSize: '4rem',
@@ -115,6 +89,22 @@ export const styles = {
         width: '10rem',
         borderBottomWidth: '0.2rem',
         backgroundColor: 'rgba(28, 162, 178, 0.3)',
+    },
+    aboutMeContentContainer: {
+        width: '100%',
+        minHeight: '35rem',
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '6rem auto',
+    },
+    workCardContentContainer: {
+        width: '100%',
+        minHeight: '35rem',
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '6rem auto',
     },
     contentContainer: {
         width: '100%',
@@ -165,5 +155,119 @@ export const styles = {
     footer: {
         width: '100%',
         backgroundColor: '#68C3B3',
+    },
+    //max-width is everything below
+    //min-width is everything above
+    '@media (max-width: 1600px) and  (min-width: 1300px)': {
+        rightSideContentContainer: {
+            paddingRight: '5rem',
+        },
+    },
+    '@media (max-width: 1299px)': {
+        rightSideContentContainer: {
+            paddingRight: '5rem',
+        },
+        pageTwoContainer: {
+            height: '100% !important',
+        },
+        pageThreeContainer: {
+            height: '100% !important',
+        },
+        pageFourContainer: {
+            height: '100% !important',
+        },
+        scrollButton: {
+            height: '2.5rem',
+            width: '2.5rem',
+            bottom: '5rem',
+        },
+    },
+    '@media (max-width: 900px)': {
+        firstPageContentContainer: {
+            flexDirection: 'column',
+        },
+        image: {
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            '& img': {
+                width: '20%'
+            },
+        },
+        rightSideContentContainer: {
+            width: '100%',
+            paddingRight: '0',
+        },
+        pageOneContainer: {
+            height: '100% !important',
+        },
+        pageTwoContainer: {
+            height: '100% !important',
+        },
+        pageThreeContainer: {
+            height: '100% !important',
+        },
+        pageFourContainer: {
+            height: '100% !important',
+        },
+        projectContentContainer: {
+            flexDirection: 'column'
+        },
+        scrollButton: {
+            height: '1.5rem',
+            width: '1.5rem',
+            right: '2rem',
+            bottom: '2rem',
+        },
+    },
+    '@media (max-width: 838px)': {
+        aboutMeContentContainer: {
+            flexDirection: 'column',
+        },
+        workCardContentContainer: {
+            padding: '0rem 1.5rem',
+        },
+    },
+    '@media (max-width: 500px)': {
+        workCardContentContainer: {
+            margin: '0rem',
+        },
+        scrollButton: {
+            height: '1rem',
+            width: '1rem',
+            right: '2rem',
+            bottom: '2rem',
+        },
+    },
+    '@media (max-width: 400px)': {
+        button: {
+            fontSize: '0.8rem',
+        },
+        scrollButton: {
+            height: '0.8rem',
+            width: '0.8rem',
+            right: '1rem',
+            bottom: '1rem',
+        },
+    },
+    '@media (min-width: 900px)': {
+        projectContentContainer: {
+            padding: '0rem',
+        },
+    },
+    '@media (min-width: 1200px)': {
+        projectContentContainer: {
+            padding: '0rem 10rem',
+        },
+    },
+    '@media (min-width: 1600px)': {
+        projectContentContainer: {
+            padding: '0rem 20rem',
+        },
+    },
+    '@media (min-width: 2200px)': {
+        projectContentContainer: {
+            padding: '0rem 40rem',
+        },
     },
 }
