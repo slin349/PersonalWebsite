@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Divider, Grid, Typography } from '@mui/material';
 import { Link as MaterialLink } from '@mui/material';
-import { styles } from '../styleobjects/styles';
+import { styles } from '../styleobjects/landingPage';
 import { makeStyles } from '@mui/styles';
 import { aboutMeData, workData, projectData } from '../data/data';
 import memoji from '../images/memoji.png';
@@ -15,8 +15,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FeedIcon from '@mui/icons-material/Feed';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import resume from '../data/StevenLin.pdf';
 
-const useStyle = makeStyles(styles)
+const useStyle = makeStyles(styles);
 
 const LandingPage = () => {
     const classes = useStyle();
@@ -44,10 +45,10 @@ const LandingPage = () => {
         <Grid>
             <Grid className={classes.firstPageContainer} id='firstPage'>
                 <Grid container direction='row' className={classes.firstPageContentContainer}>
-                    <Grid xs={3} item className={classes.image}>
+                    <Grid className={classes.image}>
                         <img src={memoji} alt='self-portrait' />
                     </Grid>
-                    <Grid xs={6} container item direction='column'>
+                    <Grid container direction='column' className={classes.rightSideContentContainer}>
                         <Typography className={classes.nameText}>
                             Hello, my name is
                             <span className={classes.myNameText}>
@@ -67,7 +68,7 @@ const LandingPage = () => {
                             <MaterialLink href='mailto:stevenlin159@gmail.com'>
                                 <EmailIcon className={classes.icons} />
                             </MaterialLink>
-                            <MaterialLink href='https://github.com/slin349?tab=repositories' target='_blank' rel='noopener'>
+                            <MaterialLink href={resume} target='_blank' rel='noopener'>
                                 <FeedIcon className={classes.icons} />
                             </MaterialLink>
                         </Grid>
@@ -125,8 +126,8 @@ const LandingPage = () => {
                     <Divider className={classes.divider} />
                 </Grid>
                 <Grid container className={classes.projectContentContainer}>
-                    {projectData.map((projectData) => (
-                        <ProjectCard projectData={projectData} />
+                    {projectData.map((projectData, index) => (
+                        <ProjectCard projectData={projectData} key={index} />
                     ))}
                 </Grid>
             </Grid>

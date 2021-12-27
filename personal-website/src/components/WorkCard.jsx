@@ -1,7 +1,7 @@
 import { Divider, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react'
-import { styles } from '../styleobjects/styles';
+import { styles } from '../styleobjects/workCard';
 
 const useStyle = makeStyles(styles)
 

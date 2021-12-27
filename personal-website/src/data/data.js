@@ -1,4 +1,3 @@
-import memoji from '../images/memoji.png';
 import webpage from '../images/webpage.jpg';
 import geotab from '../images/geotabLogo.png';
 import hansel from '../images/hanselAndGretel.png';
