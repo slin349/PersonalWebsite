@@ -138,8 +138,8 @@ export const styles = {
     },
     scrollButton: {
         position: 'fixed',
-        width: '3rem',
-        height: '3rem',
+        width: '4rem',
+        height: '4rem',
         zIndex: '1',
         bottom: '6rem',
         right: '3rem',
@@ -177,8 +177,8 @@ export const styles = {
             height: '100% !important',
         },
         scrollButton: {
-            height: '2.5rem',
-            width: '2.5rem',
+            height: '4rem',
+            width: '4rem',
             bottom: '5rem',
         },
     },
@@ -215,8 +215,6 @@ export const styles = {
             flexDirection: 'column'
         },
         scrollButton: {
-            height: '1.5rem',
-            width: '1.5rem',
             right: '2rem',
             bottom: '2rem',
         },
@@ -234,8 +232,6 @@ export const styles = {
             margin: '0rem',
         },
         scrollButton: {
-            height: '1rem',
-            width: '1rem',
             right: '2rem',
             bottom: '2rem',
         },
@@ -245,8 +241,6 @@ export const styles = {
             fontSize: '0.8rem',
         },
         scrollButton: {
-            height: '0.8rem',
-            width: '0.8rem',
             right: '1rem',
             bottom: '1rem',
         },
