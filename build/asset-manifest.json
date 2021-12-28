@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a52a8bc3.chunk.css",
+    "main.js": "/static/js/main.437e8aef.chunk.js",
+    "main.js.map": "/static/js/main.437e8aef.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.97adac59.js",
+    "runtime-main.js.map": "/static/js/runtime-main.97adac59.js.map",
+    "static/js/2.44da32aa.chunk.js": "/static/js/2.44da32aa.chunk.js",
+    "static/js/2.44da32aa.chunk.js.map": "/static/js/2.44da32aa.chunk.js.map",
+    "static/js/3.2b2ff8e9.chunk.js": "/static/js/3.2b2ff8e9.chunk.js",
+    "static/js/3.2b2ff8e9.chunk.js.map": "/static/js/3.2b2ff8e9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a52a8bc3.chunk.css.map": "/static/css/main.a52a8bc3.chunk.css.map",
+    "static/js/2.44da32aa.chunk.js.LICENSE.txt": "/static/js/2.44da32aa.chunk.js.LICENSE.txt",
+    "static/media/StevenLin.48c850b3.pdf": "/static/media/StevenLin.48c850b3.pdf",
+    "static/media/geotabLogo.c7fadf02.png": "/static/media/geotabLogo.c7fadf02.png",
+    "static/media/hanselAndGretel.baa41fca.png": "/static/media/hanselAndGretel.baa41fca.png",
+    "static/media/memoji.5f7cb915.png": "/static/media/memoji.5f7cb915.png",
+    "static/media/v1chat.6b7be427.png": "/static/media/v1chat.6b7be427.png",
+    "static/media/webpage.b37af9d8.jpg": "/static/media/webpage.b37af9d8.jpg",
+    "static/media/westernIcon.04e13f22.jpg": "/static/media/westernIcon.04e13f22.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97adac59.js",
+    "static/js/2.44da32aa.chunk.js",
+    "static/css/main.a52a8bc3.chunk.css",
+    "static/js/main.437e8aef.chunk.js"
+  ]
+}
