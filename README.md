@@ -1,2 +1,2 @@
 # PersonalWebsite
-Simple website to display a little about me and my skills!
+Simple website made with React and styled with Material UI
