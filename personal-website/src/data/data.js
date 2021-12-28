@@ -14,7 +14,7 @@ export const aboutMeData = [
     {
         img: '💻',
         title: 'Web Developer',
-        description: 'I enjoy building applications through web-based mediums and I have a background in full stack development ',
+        description: 'I enjoy building applications through web-based mediums and I have a background in full stack development.',
     },
     {
         img: '🏠',
@@ -24,7 +24,7 @@ export const aboutMeData = [
     {
         img: '🍳',
         title: 'Cooking',
-        description: 'Cooking is one of my favourite hobby and I spend a lot of my time trying out different foods.',
+        description: 'Cooking is one of my favourite hobbies and I spend a lot of my time trying out different foods.',
     },
 ];
 

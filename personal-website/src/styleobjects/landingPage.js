@@ -196,6 +196,7 @@ export const styles = {
         },
         rightSideContentContainer: {
             width: '100%',
+            marginTop: '0.5rem',
             paddingRight: '0',
         },
         pageOneContainer: {
