@@ -19,7 +19,7 @@ export const aboutMeData = [
     {
         img: '🏠',
         title: 'Toronto',
-        description: 'All 21 years of my life have been spent in Toronto! However, I also love travelling and love new experiences.',
+        description: 'All 21 years of my life have been spent in Toronto! However, I also love travelling and new experiences.',
     },
     {
         img: '🍳',
