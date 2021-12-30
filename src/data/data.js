@@ -48,7 +48,7 @@ export const projectData = [
     {
         name: 'Recipe Finder',
         img: recipeFinder,
-        link: '',
+        link: 'https://github.com/slin349/RecipeFinder',
     },
     {
         name: 'Western Timetable',
