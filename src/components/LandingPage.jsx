@@ -15,7 +15,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FeedIcon from '@mui/icons-material/Feed';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import resume from '../data/StevenLin.pdf';
+import resume from '../data/resume.pdf';
 
 const useStyle = makeStyles(styles);
 
