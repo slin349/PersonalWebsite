@@ -15,7 +15,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FeedIcon from '@mui/icons-material/Feed';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import resume from '../data/resume.pdf';
 
 const useStyle = makeStyles(styles);
 
@@ -68,7 +67,7 @@ const LandingPage = () => {
                             <MaterialLink href='mailto:stevenlin159@gmail.com'>
                                 <EmailIcon className={classes.icons} />
                             </MaterialLink>
-                            <MaterialLink href={resume} target='_blank' rel='noopener'>
+                            <MaterialLink href='https://slin349.github.io/PersonalWebsite/Steven-Lin-Resume.pdf' target='_blank' rel='noopener'>
                                 <FeedIcon className={classes.icons} />
                             </MaterialLink>
                         </Grid>
