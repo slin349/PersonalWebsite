@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <Grid className={classes.footerContainer}>
             <Typography className={classes.footerText}>
-                Website is made in React and styled with Material UI 🎨
+                Website is made in React and Material UI 🎨
             </Typography>
             <Typography className={classes.footerText}>
                 ©️ Steven Lin
