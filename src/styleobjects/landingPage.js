@@ -47,6 +47,10 @@ export const styles = {
         fontSize: '2rem',
         margin: '0rem 0.3rem',
         color: '#015249',
+        transition: 'color 0.25s ease',
+        '&:hover': {
+            color: '#ED9121'
+        }
     },
     buttonContainer: {
         display: 'flex',
